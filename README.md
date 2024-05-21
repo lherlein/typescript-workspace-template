@@ -2,9 +2,10 @@
 
 This repo is a template/example meant to 1. show newer Typescript users how to setup a repository of this structure, and 2. provide an easy-to-use template that can kickstart mono-repo TS projects. It uses `tsc` and `tsup` to build and organize the code, `ESLint` to format the code and `jest` to test it. Linting and Testing the code is pre-built into all pushes to main.
 
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
 
 ## Table of Contents
 
