@@ -1,9 +1,2 @@
-// Package A entry point
-
-function packageA(): void {
-  console.log('Package A');
-}
-
-packageA();
-
-export default packageA;
+// Export all functions from functions.ts
+export * from './funcs';

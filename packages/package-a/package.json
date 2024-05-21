@@ -4,15 +4,38 @@
   "description": "Your Alpha package",
   "scripts": {
     "build": "tsc && tsup",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test": "jest --passWithNoTests"
+  },
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/lherlein/typescript-workspace-template.git",
+		"directory": "packages/package-a"
+	},
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "dependencies": {},
+  "dependencies": {
+    "zod": "3.23.8"
+  },
   "devDependencies": {
     "tsup": "8.0.2",
-    "typescript": "5.4.5"
+    "typescript": "5.4.5",
+    "@jest/globals": "^29.0.0",
+    "expect-type": "^0.17.3",
+    "ts-jest": "^29.1.1"
   }
 }
