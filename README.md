@@ -12,11 +12,11 @@ This repo is a template/example meant to 1. show newer Typescript users how to s
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Key Features](#key-features)
   - [Explanations](#explanations)
     - [Repo Structure](#repo-structure)
     - [Editing the Template](#editing-the-template)
     - [Renaming the Packages](#renaming-the-packages)
-  - [Key Features](#key-features)
   - [License](#license)
   - [Contact](#contact)
   - [Acknowledgements](#acknowledgements)
@@ -57,6 +57,24 @@ Using this repo is almost as easy as cloning it. Simply type the following comma
 - `npm run start`
   - You should see your terminal execute the correct functions and exit with `Code 0` - this means it worked
   - You can see the console.log outputs in the newly created log file for the execution 
+
+
+## Key Features
+
+[:arrow_up_small: Back to Top](#typescript-workspace-template)
+
+This repository structure is most commonly known as a mono-repo. It is a single repository that holds multiple unique modules. Here's the list of features:
+
+- **TypeScript Ready**: Fully configured TypeScript support for seamless development and type-checking across all workspaces.
+- **NPM Workspaces**: Efficiently manage multiple packages within a single repository using npm workspaces, making dependency management and project organization easier.
+- **Modular Structure**: Designed with a clear and scalable structure, promoting better code organization and easier maintenance.
+- **Shared Configurations**: Centralized configurations for tsConfig, ensuring consistent coding standards and streamlined setup. Apply other configs the same way `tsconfig` is applied in this repo for centralized configs for other tools like ESLint and Prettier/Prettier.
+- **Automated Builds and Tests**: Pre-configured scripts for building and testing all workspaces, improving development workflow and CI/CD integration.
+- **Inter-Package Dependencies**: Simplified linking and dependency management between workspaces, facilitating better collaboration and integration within the monorepo.
+- **Code Quality Tools**: Integrated with code quality tools such as ESLint and Prettier for maintaining high code standards and ensuring clean, readable code.
+- **Extensible and Customizable**: Easily extend and customize the template to fit the specific needs of your projects and teams.
+- **Example Workspaces**: Includes example workspaces to demonstrate best practices and provide a quick start for adding new packages.
+- **Documentation and Support**: Comprehensive documentation to guide you through setup, configuration, and best practices for managing a TypeScript monorepo with npm workspaces.
 
 ## Explanations
 
@@ -110,23 +128,6 @@ For the latter, there are extra considerations you have to make - you can read a
 You may want to rename package-a and package-b to better-represent your module(s). In order to do this, first change the directory name of the package. Next, within the package's `package.json`, rename the package `name` and the directory location. Finally, replace every instance of the old package name in the root `package.json` to the new name you want. Once this is done, you can run `npm install` to verify everything worked.
 
 To rename `package-a` to `my-module`, change `packages/package-a/` to `packages/my-module`. Then edit `packages/my-module/package.json` and change the `name` field to `my-module` (it was `package-a`). Finally, do a find and replace on `package-a` in `./package.json` and replace it with `my-module`. Run a `npm install` to finish up and make sure everything was successfull.
-
-## Key Features
-
-[:arrow_up_small: Back to Top](#typescript-workspace-template)
-
-This repository structure is most commonly known as a mono-repo. It is a single repository that holds multiple unique modules. Here's the list of features:
-
-- **TypeScript Ready**: Fully configured TypeScript support for seamless development and type-checking across all workspaces.
-- **NPM Workspaces**: Efficiently manage multiple packages within a single repository using npm workspaces, making dependency management and project organization easier.
-- **Modular Structure**: Designed with a clear and scalable structure, promoting better code organization and easier maintenance.
-- **Shared Configurations**: Centralized configurations for tsConfig, ensuring consistent coding standards and streamlined setup. Apply other configs the same way `tsconfig` is applied in this repo for centralized configs for other tools like ESLint and Prettier/Prettier.
-- **Automated Builds and Tests**: Pre-configured scripts for building and testing all workspaces, improving development workflow and CI/CD integration.
-- **Inter-Package Dependencies**: Simplified linking and dependency management between workspaces, facilitating better collaboration and integration within the monorepo.
-- **Code Quality Tools**: Integrated with code quality tools such as ESLint and Prettier for maintaining high code standards and ensuring clean, readable code.
-- **Extensible and Customizable**: Easily extend and customize the template to fit the specific needs of your projects and teams.
-- **Example Workspaces**: Includes example workspaces to demonstrate best practices and provide a quick start for adding new packages.
-- **Documentation and Support**: Comprehensive documentation to guide you through setup, configuration, and best practices for managing a TypeScript monorepo with npm workspaces.
 
 ## License
 
