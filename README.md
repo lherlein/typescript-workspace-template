@@ -12,11 +12,11 @@ This repo is a template/example meant to 1. show newer Typescript users how to s
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Explanations](#explanations)
     - [Repo Structure](#repo-structure)
     - [Editing the Template](#editing-the-template)
     - [Renaming the Packages](#renaming-the-packages)
   - [Key Features](#key-features)
-  - [Explanations](#explanations)
   - [License](#license)
   - [Contact](#contact)
   - [Acknowledgements](#acknowledgements)
@@ -57,6 +57,12 @@ Using this repo is almost as easy as cloning it. Simply type the following comma
 - `npm run start`
   - You should see your terminal execute the correct functions and exit with `Code 0` - this means it worked
   - You can see the console.log outputs in the newly created log file for the execution 
+
+## Explanations
+
+[:arrow_up_small: Back to Top](#typescript-workspace-template)
+
+Here, we'll discuss the repository and go through it's structure, examples and how to edit it.
 
 ### Repo Structure
 
@@ -121,10 +127,6 @@ This repository structure is most commonly known as a mono-repo. It is a single 
 - **Extensible and Customizable**: Easily extend and customize the template to fit the specific needs of your projects and teams.
 - **Example Workspaces**: Includes example workspaces to demonstrate best practices and provide a quick start for adding new packages.
 - **Documentation and Support**: Comprehensive documentation to guide you through setup, configuration, and best practices for managing a TypeScript monorepo with npm workspaces.
-
-## Explanations
-
-[:arrow_up_small: Back to Top](#typescript-workspace-template)
 
 ## License
 
